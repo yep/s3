@@ -18,7 +18,15 @@ Container size is reduced by:
 Usage
 -----
 
-See the [S3 client README](https://github.com/barnybug/s3#setup)
+List buckets:
+
+    docker run -e AWS_ACCESS_KEY_ID=... -e AWS_SECRET_ACCESS_KEY=... yep1/s3 ls
+
+Download files of a path recursively:
+
+    docker run -e AWS_ACCESS_KEY_ID=... -e AWS_SECRET_ACCESS_KEY=... yep1/s3 get s3://bucket/path
+
+For instructions of the commands `cat`, `sync`, `rm`, `rmb` and `mb` see the [barnybug/s3 README](https://github.com/barnybug/s3#usage)
 
 License
 -------
