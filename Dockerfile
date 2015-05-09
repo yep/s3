@@ -17,4 +17,4 @@ RUN \
   mv /root/bin/s3 /usr/local/bin && \
   rm -rf /root/*
 
-ENTRYPOINT s3
+ENTRYPOINT [ "/usr/local/bin/s3" ]
